@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pixel Art Studio Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<aside class="sidebar">
+
+
+<div class="logo">
+
+🎨
+
+<h2 data-lang="title">
+Pixel Art Studio
+</h2>
+
+</div>
+
+
+
+
+<div class="languages">
+
+<button data-language="uz">UZ</button>
+
+<button data-language="ru">RU</button>
+
+<button data-language="en">EN</button>
+
+</div>
+
+
+
+
+
+<button id="themeBtn" class="main-btn">
+
+🌙
+
+<span data-lang="theme">
+Tungi rejim
+</span>
+
+</button>
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3 data-lang="colors">
+Ranglar
+</h3>
+
+
+<div class="palette">
+
+<button style="background:red"></button>
+
+<button style="background:blue"></button>
+
+<button style="background:green"></button>
+
+<button style="background:yellow"></button>
+
+<button style="background:orange"></button>
+
+<button style="background:purple"></button>
+
+<button style="background:black"></button>
+
+<button style="background:white"></button>
+
+</div>
+
+
+
+<input type="color" id="colorPicker">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3 data-lang="grid">
+To'r
+</h3>
+
+
+<select id="gridSize">
+
+<option value="16">
+16 x 16
+</option>
+
+<option value="32" selected>
+32 x 32
+</option>
+
+<option value="64">
+64 x 64
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<h3 data-lang="brushText">
+Qalam hajmi
+</h3>
+
+
+<input 
+type="range"
+id="brushSize"
+min="1"
+max="5"
+value="1">
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="tools">
+
+
+<button id="pencilBtn" data-lang="pencil">
+Qalam
+</button>
+
+
+<button id="eraserBtn" data-lang="eraser">
+O'chirg'ich
+</button>
+
+
+
+<button id="undoBtn">
+↩️ Undo
+</button>
+
+
+<button id="redoBtn">
+↪️ Redo
+</button>
+
+
+
+<button id="clearBtn" data-lang="clear">
+Tozalash
+</button>
+
+
+
+<button id="saveBtn" data-lang="save">
+PNG saqlash
+</button>
+
+
+
+<button id="zoomIn">
+🔍 +
+</button>
+
+
+<button id="zoomOut">
+🔍 -
+</button>
+
+
+</div>
+
+
+
+</aside>
+
+
+
+
+
+
+
+
+<main class="workspace">
+
+
+<header>
+
+
+<h1 data-lang="title">
+Pixel Art Studio
+</h1>
+
+
+
+<button id="galleryBtn" data-lang="gallery">
+Galereya
+</button>
+
+
+</header>
+
+
+
+
+
+
+
+<div class="canvas-area">
+
+
+<div id="canvas"></div>
+
+
+</div>
+
+
+
+
+
+
+
+<section id="gallery">
+
+
+<h2 data-lang="gallery">
+Galereya
+</h2>
+
+
+
+<div id="galleryList">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+Developer:
+<b>
+Ulug'bek.R
+</b>
+
+</footer>
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+
+<script src="languages.js"></script>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
